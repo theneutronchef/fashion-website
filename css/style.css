@@ -26,7 +26,8 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Slab";
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -64,10 +65,12 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(200,200,200,.3) !important;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    font-family: "Josefin Slab";
+
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    background-color: #fff;
 }
 
 .navbar-custom .navbar-brand {
@@ -81,7 +84,9 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    /*color: #fff;*/
+    color: #111;
+
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -90,7 +95,9 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    /*color: #fff;*/
+    color: #111;
+
 }
 
 .navbar-custom .nav li a {
@@ -101,7 +108,8 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    /*color: rgba(255,255,255,.8);*/
+    color: #bbb;
     background-color: transparent;
 }
 
@@ -120,24 +128,29 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    /*color: #fff;*/
+    color: #111;
+
 }
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
+        /*padding: 20px 0;*/
+        /*border-bottom: 0;*/
         letter-spacing: 1px;
-        background: 0 0;
+        /*background: 0 0;*/
+        background-color: #fff;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .navbar-custom.top-nav-collapse {
+        position:fixed;
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        border-bottom: 1px solid rgba(200,200,200,.3) !important;
+        /*background: #000;*/
+        background: #fff;
     }
 }
 
@@ -148,12 +161,15 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background: url(../img/mainpic.jpg) no-repeat bottom center scroll;
+    /*background-color: #000;*/
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, .6);
+
 }
 
 .intro .intro-body {
@@ -180,8 +196,12 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 36px;
     }
+}
+
+.align {
+    top: 150px;
 }
 
 .btn-circle {
@@ -262,11 +282,31 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.how-it-works, .about {
+    width: 100%;
+    padding: 100px 0;
+    color: #000;
+    background-color: #FF6600;
+    background: url(../img/peach-bg.jpg) no-repeat center center scroll;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.caption {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+
+
+
+.final-section {
+    height: 500px;
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/clothes-display.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -282,7 +322,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -298,7 +338,9 @@ a:focus {
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Slab";
+
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -306,17 +348,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #000;
+    color: #000;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #000;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #fff;
 }
 
 ul.banner-social-buttons {
